@@ -368,7 +368,10 @@ header h1 {
 
 .section-one {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    /* width: 10%; */
     
 }
 .section-one img {
@@ -379,14 +382,39 @@ header h1 {
 .gallery-one {
     display: flex;
     justify-content: space-around;
+   
+}
+.gallery-one div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 22%;
+    height: 15rem;
+}
+.gallery-one p {
+    display: flex;
+    /* justify-content: last baseline; */
 }
 .gallery-two {
     display: flex;
     justify-content: space-around;
 }
-footer {
+.gallery-two div{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 20%
+    justify-content: center;
+    width: 22%;
+    height: 15rem;
+}
+footer {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: blue;
+}
+footer div h4{
+   
+    
 }
