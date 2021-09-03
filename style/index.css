@@ -350,18 +350,18 @@ template {
   display: none;
 }
 * {
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     font-family: 'Alegreya', serif;
 }
 body {
-    background-image: linear-gradient(to bottom right, rgba(202, 104, 137, 0.815) , rgba(181, 87, 218, 0.774));
+    background-color: rgb(223,198,189);
     
 }
 .top{
     display: flex;
     flex-direction: column;
     height: 8rem;
-    background-image: url("https://images.unsplash.com/photo-1444021465936-c6ca81d39b84?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80") ;
+    background-image: url(https://images.unsplash.com/photo-1554147090-e1221a04a025?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1331&q=80) ;
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -371,13 +371,13 @@ body {
     margin-left: 2%;
     margin-bottom: 1%;
 }
-.button {
+.button{
         
   display: inline-block;
   width: 10%;
   padding: 0.5%;
   text-align: center;
-  background-color: rgb(79, 37, 119);
+  background-color: rgb(222,170,160);
   color: white;
   text-decoration: none;
   letter-spacing: 1px;
@@ -406,7 +406,7 @@ body {
   width: 30%;
   padding: 1.5%;
   text-align: center;
-  background-color: rgb(79, 37, 119);
+  background-color: rgb(222,170,160);
   color: white;
   text-decoration: none;
   letter-spacing: 1px;
@@ -462,9 +462,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 8rem;
-    background-image: url("https://images.unsplash.com/photo-1444021465936-c6ca81d39b84?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80") ;
-    background-position: center;
+    height: 9rem;
+    background-image: url("https://images.unsplash.com/photo-1554147090-e1221a04a025?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1331&q=80") ;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size:cover;
     height: 1%;
@@ -473,17 +473,18 @@ footer div h3{
     color: white;
     font-size: x-large;
 }
-footer div:last-child{
+.button-three {
+    padding: 0.5em 2em;
+    text-align: center;
+    background-color: rgb(222,170,160);
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+    footer div:last-child{
     margin-bottom: 3%;
 }
-.button-three {
 
-  width: 100%;
-  padding: 0.5%;
-  text-align: center;
-  background-color: rgb(79, 37, 119);
-  color: white;
-  text-decoration: none;
-  letter-spacing: 1px;
   
-}
+  
