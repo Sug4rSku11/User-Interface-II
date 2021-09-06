@@ -354,7 +354,7 @@ template {
     font-family: 'Alegreya', serif;
 }
 body {
-    background-color: #d2c9c8;
+    background-color: #f0dbe7;
     
 }
 .header{
@@ -380,21 +380,22 @@ body {
   width: 10%;
   padding: 0.5%;
   text-align: center;
-  background-color: #be9f9e;
+  background-color: #96b8d8;
   color: white;
   text-decoration: none;
   letter-spacing: 1px;
   margin-left: 5%;
   margin-right: -6%;
-
-  
+}
+.home {
+  background-color: #557191
 }
 .header h1 {
     color: white;
     
 }
 
-.left {
+.top {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -411,11 +412,10 @@ body {
   width: 40%;
   padding: 1.5%;
   text-align: center;
-  background-color: #be9f9e;
+  background-color: #96b8d8;
   color: white;
   text-decoration: none;
   letter-spacing: 1px;
-  
 }
 
 
@@ -435,8 +435,10 @@ body {
 
 .gallery-one {
     display: flex;
-    justify-content: space-around;  
-    margin-bottom: 2rem;
+    justify-content: space-around; 
+    align-content: center;
+    
+    margin-bottom: 1rem;
 }
 .gallery-one div {
     display: flex;
@@ -453,7 +455,7 @@ body {
 .gallery-two {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .gallery-two div{
     display: flex;
@@ -486,7 +488,7 @@ footer div h3{
     border: 0.5px solid gray;
     padding: 0.5em 2em;
     text-align: center;
-    background-color: #be9f9e;
+    background-color: #96b8d8;
     color: white;
     text-decoration: none;
     letter-spacing: 1px;
@@ -498,9 +500,69 @@ footer div h3{
 /* Media Queries */
 @media (max-width: 800px) {
 /* When screen reaches 800px or smaller */
-  .right {
-    display: flex;
-    /* justify-content: column; */
-    /* align-items: center; */
+  
+}
+@media (max-width: 500px){
+  /* When screen reaches 500px or smaller */
+  .header {
+    /* display: flex;
+    direction: column; */
+    align-items: center;
+    height: 100%;
   }
+  .header nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+  }
+  .button {
+    border: 0.5px solid gray;   
+    display: inline-block;
+    width: 100%;
+    padding: 2% 6%;
+    text-align: center;
+    background-color: #96b8d8;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-left: 1%;
+    margin-right: -2%;
+}
+.home {
+  background-color: #557191
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left img {
+  
+  margin: 2% 6%;
+}
+.right {
+  align-items: center;
+}
+.right p {
+  text-align: center;
+}
+.gallery-one {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.gallery-one div{
+  width: 45%;
+}
+
+.gallery-two {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery-two div {
+  width: 45%;
+}
+footer div:last-child {
+  margin-bottom: 10%;
+}
 }
